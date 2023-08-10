@@ -18,7 +18,7 @@ banner:
   onAllPages: true         # Display banner on all pages
 
 # Appearence
-hue: 270                   # The hue of the theme color (e.g. red: 0, orange: 60, blue: 260, purple: 300, pink: 345)
+hue: 260                   # The hue of the theme color (e.g. red: 0, orange: 60, blue: 260, purple: 300, pink: 345)
 
 # Sidebar
 sidebar:
@@ -37,18 +37,15 @@ recent_posts_limits: 5
 
 # Personal info
 avatar: 
-author: Your Name
+author: Artur Barilo
 subtitle: This is the subtitle
 links:
-  - name: Twitter
-    icon: fa-brands fa-twitter      # Find icon codes at https://fontawesome.com/search
-    url: https://twitter.com
-  - name: Steam
-    icon: fa-brands fa-steam
-    url: https://store.steampowered.com
+  - name: LinkedIn
+    icon: fa-brands fa-linkedin      # Find icon codes at https://fontawesome.com/search
+    url: https://www.linkedin.com/in/efreyu/
   - name: GitHub
     icon: fa-brands fa-github
-    url: https://github.com
+    url: https://github.com/efreyu
 
 comment:
   valine:
@@ -69,4 +66,4 @@ google_analytics: false #UA-xxxxxx
 baidu_analytics: false # ddxxxxxxxxxxxxxxxxx In the https://hm.baidu.com/hm.js? Afterwards
 
 #Copyright
-copyright: #<a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris"></a>
+copyright: #<a target="_blank" rel="noopener" href="https://opensource.org/license/mit/" style="margin-inline:5px" title="The MIT License"><img src="https://img.shields.io/badge/Copyright-Artur%20Barilo-d42328?style=flat"></a>
