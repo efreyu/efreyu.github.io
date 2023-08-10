@@ -36,9 +36,9 @@ archive_type: 'monthly'
 recent_posts_limits: 5
 
 # Personal info
-avatar: 
+avatar: https://avatars.githubusercontent.com/u/19453227
 author: Artur Barilo
-subtitle: This is the subtitle
+subtitle: C++ Game Developer
 links:
   - name: LinkedIn
     icon: fa-brands fa-linkedin      # Find icon codes at https://fontawesome.com/search
