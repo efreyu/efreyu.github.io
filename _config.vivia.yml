@@ -1,6 +1,7 @@
 # Header
 menu:
   Home: /
+  Programming: /categories/Programming
   Archives: /archives
   About: /about
 rss: /atom.xml
