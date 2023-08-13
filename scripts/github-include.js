@@ -44,8 +44,5 @@ function renderCode(code, lang) {
             engine: 'markdown'
         });
     }
-    return hexo.render.render({
-        text: code,
-        engine: 'text'
-    });
+    return code;
 }
