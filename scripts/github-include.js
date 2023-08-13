@@ -1,5 +1,7 @@
 const http = require('http');
 const https = require('https');
+const hljs = require('highlight.js/lib/core');
+hljs.registerLanguage('cpp', require('highlight.js/lib/languages/cpp'));
 
 hexo.extend.tag.register('github_include', function (args) {
     const path = args[0];
@@ -37,12 +39,21 @@ function httpGet(url) {
 }
 
 function renderCode(code, lang) {
-    if (lang != '') {
+    if (lang === '') {
         const markdown = `\`\`\`${lang}\n${code}\n\`\`\``;
         return hexo.render.render({
             text: markdown,
             engine: 'markdown'
         });
+    } else {
+        const data = hljs.highlight(
+            code,
+            { language: lang }
+        ).value;
+        return hexo.render.render({
+            text: data,
+            engine: 'text'
+        });
+        // return '<pre><code class="language-${lang}">${data}</code></pre>'
     }
-    return code;
 }
