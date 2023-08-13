@@ -19,6 +19,12 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 $ hexo new "My New Post"
 ```
 
+{% github_include efreyu/problem-solving/master/src/main.cpp %}
+
+
+{% vimhl cpp true %}
+{% github_include efreyu/problem-solving/master/src/main.cpp %}
+{% endvimhl %}
 More info: [Writing](https://hexo.io/docs/writing.html)
 
 ### Run server
