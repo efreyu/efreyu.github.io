@@ -37,9 +37,16 @@ function httpGet(url) {
 }
 
 function renderCode(code, lang) {
-    const markdown = `\`\`\`${lang}\n${code}\n\`\`\``;
-    return hexo.render.render({
-        text: markdown,
-        engine: 'markdown'
-    });
+    if (lang === '') {
+        const markdown = `\`\`\`${lang}\n${code}\n\`\`\``;
+        return hexo.render.render({
+            text: markdown
+        });
+    } else {
+        const markdown = `\`\`\`lang:${lang}\n${code}\n\`\`\``;
+        return hexo.render.render({
+            text: markdown,
+            engine: 'markdown'
+        });
+    }
 }

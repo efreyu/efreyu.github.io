@@ -19,9 +19,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 $ hexo new "My New Post"
 ```
 
-{% codeblock main.cpp lang:c++ %}
-{% github_include efreyu/problem-solving/master/src/main.cpp %}
-{% endcodeblock %}
+{% github_include efreyu/problem-solving/master/src/main.cpp c++ %}
 
 {% codeblock main.cpp lang:c++ %}
 int main(int argc, char** argv) {
