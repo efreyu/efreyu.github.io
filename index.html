@@ -54,12 +54,7 @@
       <navbar id="navbar">
   <nav id="title-nav">
     <a href="/">
-      <div id="vivia-logo">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-      </div>
+      <img id="logo" src="/images/logo.svg"/>
       <div>Artur Barilo programming blog </div>
     </a>
   </nav>
@@ -247,7 +242,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            89 words 
+            102 words 
           </div>
         </div>
         
@@ -260,14 +255,19 @@
             Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
 
-1&nbsp;//
-2&nbsp;// Created by Artur Barilo on 29.11.2021.
-3&nbsp;//
-4&nbsp;#include &lt;gtest/gtest.h&gt;
-5&nbsp;
-6&nbsp;int main(int argc, char** argv) {
-7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testing::InitGoogleTest(&amp;argc, argv);
-8&nbsp;&...  
+//
+// Created by Artur Barilo on 29.11.2021.
+//
+#include &lt;gtest/gtest.h&gt;
+
+int main(int argc, char** argv) {
+    testing::InitGoogleTest(&amp;argc, argv);
+    return RUN_ALL_TESTS();
+}
+
+
+
+main.cpp1234int main(int argc, char** argv) ...  
           </div>
         
       </div>
