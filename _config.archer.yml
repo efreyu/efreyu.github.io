@@ -70,9 +70,9 @@ SEO_keywords:
   - c++
   - c++11
 # main title shown in header image
-main_title: Programming blog.
+main_title: Programming blog
 # subtitle
-subtitle: Game development notes.
+subtitle: Game development notes
 # site haeder image
 site_header_image: '/intro/index-bg.jpg'
 # post haeder image
