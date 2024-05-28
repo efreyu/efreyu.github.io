@@ -4,8 +4,6 @@ date: 2024-05-27 14:40:48
 tags: ["Unreal Engine", "C++", "GameDev"]
 categories: ["Unreal Engine", "Programming"]
 ---
-### Introduction
-
 Working with Unreal Engine can be a complex yet rewarding experience for game developers. Streamlining your development process is key to maintaining productivity and creativity. 
 One effective way to achieve this is by leveraging live templates in Rider and CLion. These powerful tools can automate repetitive tasks, reduce errors, and significantly speed up your workflow. 
 In this post, we'll explore some of the most useful live templates that I use for Unreal Engine development and in general, and how to set them up in Rider and CLion to enhance your coding efficiency.
