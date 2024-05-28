@@ -1,8 +1,8 @@
 ---
 title: Enhance Your Unreal Engine Workflow with Live Templates in Rider and CLion
 date: 2024-05-27 14:40:48
-tags: Unreal Engine, C++, GameDev
-categories: Unreal Engine, Programming
+tags: ["Unreal Engine", "C++", "GameDev"]
+categories: ["Unreal Engine", "Programming"]
 ---
 ### Introduction
 
