@@ -74,7 +74,7 @@ main_title: Programming blog
 # subtitle
 subtitle: Game development notes
 # site haeder image
-site_header_image: '/intro/index-bg.jpg'
+site_header_image: '/assets/index-bg.jpg'
 # post haeder image
 post_header_image: '/intro/post-bg.jpg'
 # 404 image
