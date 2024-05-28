@@ -4,13 +4,14 @@ date: 2024-05-27 14:40:48
 tags: Unreal Engine, C++, GameDev
 categories: Unreal Engine, Programming
 ---
-
 ### Introduction
+
 Working with Unreal Engine can be a complex yet rewarding experience for game developers. Streamlining your development process is key to maintaining productivity and creativity. 
 One effective way to achieve this is by leveraging live templates in Rider and CLion. These powerful tools can automate repetitive tasks, reduce errors, and significantly speed up your workflow. 
 In this post, we'll explore some of the most useful live templates that I use for Unreal Engine development and in general, and how to set them up in Rider and CLion to enhance your coding efficiency.
 
 ### What are Live Templates?
+
 Live templates are predefined code snippets that can be quickly inserted into your code by typing a short abbreviation and pressing a designated key combination. They help automate repetitive coding tasks, enforce coding standards, and reduce the chance of errors. In the context of Rider and CLion, live templates can be customized to suit your specific needs, making your development process more efficient and streamlined.
 And here is a base example of a live template in Rider:
 ![Basic Live Template usage](assets/live-templates-ue-rider-clion/live-templates-ue-rider-clion-1.gif)
@@ -57,6 +58,7 @@ $END$
 
 
 ### Adding `UENUM()` snippet
+
 1. Create a new live template with the name `uenum`.
 2. Add this to the `Template text`:
 ```sh
@@ -67,6 +69,7 @@ enum class E$END$ : uint8 {
 ```
 
 ### Adding `UFUNCTION()` snippet
+
 1. Create a new live template with the name `ufunc` or `ufunction` as you wish.
 2. Add this to the `Template text`:
 ```sh
@@ -77,6 +80,7 @@ void $END$();
     - `FIRST` with expression `enum("BlueprintCallable", "BlueprintPure", "BlueprintImplementableEvent", "BlueprintNativeEvent")`, default variable `BlueprintCallable` and check `Skip if defined`.
 
 ### Adding general useful `todo` message
+
 1. Create a new live template with the name `todo`.
 2. Add this to the `Template text`:
 ```sh
