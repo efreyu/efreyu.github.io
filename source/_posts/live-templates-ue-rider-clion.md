@@ -4,8 +4,7 @@ date: 2024-05-27 14:40:48
 tags: ["Unreal Engine", "C++", "GameDev"]
 categories: ["Unreal Engine", "Programming"]
 ---
-Working with Unreal Engine can be a complex yet rewarding experience for game developers. Streamlining your development process is key to maintaining productivity and creativity. 
-One effective way to achieve this is by leveraging live templates in Rider and CLion. These powerful tools can automate repetitive tasks, reduce errors, and significantly speed up your workflow. 
+Working with Unreal Engine can be a complex yet rewarding experience for game developers. Streamlining your development process is key to maintaining productivity and creativity. One effective way to achieve this is by leveraging live templates in Rider and CLion. These powerful tools can automate repetitive tasks, reduce errors, and significantly speed up your workflow. 
 In this post, we'll explore some of the most useful live templates that I use for Unreal Engine development and in general, and how to set them up in Rider and CLion to enhance your coding efficiency.
 
 ### What are Live Templates?
@@ -33,8 +32,8 @@ UE_LOG($LOG_CATEGORY$, $LOG_VERBOSITY$, TEXT("Actor: '%s', Debug info %s"), *Get
 So by typing `uelog` and pressing `Tab` you will get the following code snippet, and caret will be placed at the variable `$END$`. 
 We need to add additional variables to the template to make it more useful. For example, we can add variables for the log category and verbosity level, we can achieve this by adding the following variables to the template:
 1. Click the button `Edit variables`.
-2. For the row `LOG_CATEGORY` set expression to `enum("LogTemp", "LogClass")`, default variable `LogTemp` and check `Skip if defined`.
-3. For the row `LOG_VERBOSITY` set expression to `enum("Warning", "Error", "Fatal", "Display", "All")`, default variable `Warning` and check `Skip if defined`.
+2. For the row `LOG_CATEGORY` set expression to `enum("LogTemp", "LogClass")`, default variable `LogTemp`.
+3. For the row `LOG_VERBOSITY` set expression to `enum("Warning", "Error", "Fatal", "Display", "All")`, default variable `Warning`.
 4. Click the buttons `OK` and `Save`.
 You can add more items to `enum()` variables to the template to make it even more flexible.
 ![Base snippet configuration, settings window](assets/live-templates-ue-rider-clion/live-templates-ue-rider-clion-2.png)
@@ -51,8 +50,8 @@ UPROPERTY($FIRST$, $SECOND$, Category = "Category|Sub-category",
 $END$
 ```
 3. Add variables:
-   - `FIRST` with expression `enum("EditAnywhere", "VisibleAnywhere", "EditDefaultsOnly", "VisibleDefaultOnly", "EditInstanceOnly", "VisibleInstanceOnly")`, default variable `EditAnywhere` and check `Skip if defined`.
-   - `SECOND` with expression `enum("BlueprintReadOnly", "BlueprintReadWrite", "EditFixedSize", "EditInline")`, default variable `BlueprintReadWrite` and check `Skip if defined`.
+   - `FIRST` with expression `enum("EditAnywhere", "VisibleAnywhere", "EditDefaultsOnly", "VisibleDefaultOnly", "EditInstanceOnly", "VisibleInstanceOnly")`, default variable `EditAnywhere`.
+   - `SECOND` with expression `enum("BlueprintReadOnly", "BlueprintReadWrite", "EditFixedSize", "EditInline")`, default variable `BlueprintReadWrite`.
 
 
 ### Adding `UENUM()` snippet
@@ -75,7 +74,7 @@ UFUNCTION($FIRST$, Category = "Category")
 void $END$();
 ```
 3. Add variable:
-    - `FIRST` with expression `enum("BlueprintCallable", "BlueprintPure", "BlueprintImplementableEvent", "BlueprintNativeEvent")`, default variable `BlueprintCallable` and check `Skip if defined`.
+    - `FIRST` with expression `enum("BlueprintCallable", "BlueprintPure", "BlueprintImplementableEvent", "BlueprintNativeEvent")`, default variable `BlueprintCallable`.
 
 ### Adding general useful `todo` message
 
