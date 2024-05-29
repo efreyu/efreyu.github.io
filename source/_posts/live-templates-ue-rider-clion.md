@@ -11,7 +11,7 @@ In this post, we'll explore some of the most useful live templates that I use fo
 
 Live templates are predefined code snippets that can be quickly inserted into your code by typing a short abbreviation and pressing a designated key combination. They help automate repetitive coding tasks, enforce coding standards, and reduce the chance of errors. In the context of Rider and CLion, live templates can be customized to suit your specific needs, making your development process more efficient and streamlined.
 And here is a base example of a live template in Rider:
-![Basic Live Template usage](assets/live-templates-ue-rider-clion/live-templates-ue-rider-clion-1.gif)
+![Basic Live Template usage](assets/live-templates-ue-rider-clion/live-templates-ue-rider-clion-1-updated.gif)
 
 ### Setting Up Live Templates in Rider and CLion
 
@@ -24,7 +24,7 @@ For example, you can create a live template for a simple `UE_LOG` statement in C
 4. Set the description (optional).
 5. Put into `Template text` the following code snippet:
 ```sh
-UE_LOG($LOG_CATEGORY$, $LOG_VERBOSITY$, TEXT("Actor: '%s', Debug info %s"), *GetName(), $END$);
+UE_LOG($LOG_CATEGORY$, $LOG_VERBOSITY$, TEXT("Actor: '%s', Debug info $TYPE$"), *GetName(), $END$);
 ```
 6. At the bottom you can see `Define` section where you can define variables. Click and choose `Other`.
 7. Click the button `Save`.
@@ -34,10 +34,11 @@ We need to add additional variables to the template to make it more useful. For 
 1. Click the button `Edit variables`.
 2. For the row `LOG_CATEGORY` set expression to `enum("LogTemp", "LogClass")`, default variable `LogTemp`.
 3. For the row `LOG_VERBOSITY` set expression to `enum("Warning", "Error", "Fatal", "Display", "All")`, default variable `Warning`.
+4. For the row `TYPE` set expression to `enum("%s", "%f", "%d", "empty")`, default variable `%s`.
 4. Click the buttons `OK` and `Save`.
-You can add more items to `enum()` variables to the template to make it even more flexible.
-![Base snippet configuration, settings window](assets/live-templates-ue-rider-clion/live-templates-ue-rider-clion-2.png)
-![Base snippet configuration, edit variables window](assets/live-templates-ue-rider-clion/live-templates-ue-rider-clion-3.png)
+You can add more items to `enum()` variables to the template and modify the text message to make it even more flexible.
+![Base snippet configuration, settings window](assets/live-templates-ue-rider-clion/live-templates-ue-rider-clion-2-updated.png)
+![Base snippet configuration, edit variables window](assets/live-templates-ue-rider-clion/live-templates-ue-rider-clion-3-updated.png)
 
 ### Adding `UPROPERTY()` snippet
 
