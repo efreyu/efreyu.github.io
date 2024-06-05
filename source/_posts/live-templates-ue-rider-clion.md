@@ -51,7 +51,7 @@ UPROPERTY($FIRST$, $SECOND$, Category = "Category|Sub-category",
 $END$
 ```
 3. Add variables:
-   - `FIRST` with expression `enum("EditAnywhere", "VisibleAnywhere", "EditDefaultsOnly", "VisibleDefaultOnly", "EditInstanceOnly", "VisibleInstanceOnly")`, default variable `EditAnywhere`.
+   - `FIRST` with expression `enum("EditAnywhere", "VisibleAnywhere", "EditDefaultsOnly", "VisibleDefaultsOnly", "EditInstanceOnly", "VisibleInstanceOnly")`, default variable `EditAnywhere`.
    - `SECOND` with expression `enum("BlueprintReadOnly", "BlueprintReadWrite", "EditFixedSize", "EditInline")`, default variable `BlueprintReadWrite`.
 
 
