@@ -10,7 +10,7 @@ categories: ["Unreal Engine"]
 
 When working on Unreal Engine projects, you may encounter an issue where the ShaderCompileWorker process consumes a large amount of CPU resources, causing your system to slow down significantly. This can be particularly frustrating when you need to compile shaders frequently during development. From my own experience with similar issues and after researching solutions on the official Unreal Engine forums, I have compiled several effective steps to address this problem and improve the performance of your Unreal Engine project.
 
-#Step-by-Step Solutions to Optimize Shader Compilation Performance in Unreal Engine
+# Step-by-Step Solutions to Optimize Shader Compilation Performance in Unreal Engine
 ## Verify Graphics RHI Configuration
 Ensure that the correct Graphics RHI (Rendering Hardware Interface) settings are specified in your project's configuration file. This can prevent excessive CPU usage during shader compilation.
 - Navigate to the *`Config/DefaultEngine.ini`* file in your project directory.
