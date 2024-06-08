@@ -28,7 +28,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://efreyu.github.io/assets/fix_shader_compile_worker/fix_shader_compile_worker_image.png">
 <meta property="article:published_time" content="2024-06-07T19:04:11.000Z">
-<meta property="article:modified_time" content="2024-06-08T09:49:20.918Z">
+<meta property="article:modified_time" content="2024-06-08T09:50:57.980Z">
 <meta property="article:author" content="Artur Barilo">
 <meta property="article:tag" content="Unreal Engine">
 <meta property="article:tag" content="GameDev">
@@ -497,8 +497,7 @@
     <article class="article-entry">
         <p><img src="/assets/fix_shader_compile_worker/fix_shader_compile_worker_image.png" alt="Preview"></p>
 <p>When working on Unreal Engine projects, you may encounter an issue where the ShaderCompileWorker process consumes a large amount of CPU resources, causing your system to slow down significantly. This can be particularly frustrating when you need to compile shaders frequently during development. From my own experience with similar issues and after researching solutions on the official Unreal Engine forums, I have compiled several effective steps to address this problem and improve the performance of your Unreal Engine project.</p>
-<p>#Step-by-Step Solutions to Optimize Shader Compilation Performance in Unreal Engine</p>
-<h2 id="Verify-Graphics-RHI-Configuration"><a href="#Verify-Graphics-RHI-Configuration" class="headerlink" title="Verify Graphics RHI Configuration"></a>Verify Graphics RHI Configuration</h2><p>Ensure that the correct Graphics RHI (Rendering Hardware Interface) settings are specified in your project’s configuration file. This can prevent excessive CPU usage during shader compilation.</p>
+<h1 id="Step-by-Step-Solutions-to-Optimize-Shader-Compilation-Performance-in-Unreal-Engine"><a href="#Step-by-Step-Solutions-to-Optimize-Shader-Compilation-Performance-in-Unreal-Engine" class="headerlink" title="Step-by-Step Solutions to Optimize Shader Compilation Performance in Unreal Engine"></a>Step-by-Step Solutions to Optimize Shader Compilation Performance in Unreal Engine</h1><h2 id="Verify-Graphics-RHI-Configuration"><a href="#Verify-Graphics-RHI-Configuration" class="headerlink" title="Verify Graphics RHI Configuration"></a>Verify Graphics RHI Configuration</h2><p>Ensure that the correct Graphics RHI (Rendering Hardware Interface) settings are specified in your project’s configuration file. This can prevent excessive CPU usage during shader compilation.</p>
 <ul>
 <li>Navigate to the <em><code>Config/DefaultEngine.ini</code></em> file in your project directory.</li>
 <li>In the section <em><code>[Script/WindowsTargetPlatform.WindowsTargetSettings]</code></em>, ensure the following settings are correctly specified:</li>
@@ -539,7 +538,7 @@
             <p>Author：<a href="https://efreyu.github.io">Artur Barilo</a>
             <p>Link：<a href="https://efreyu.github.io/post/fix-shader-compile-worker.html">https://efreyu.github.io/post/fix-shader-compile-worker.html</a>
             <p>Publish date：<a href="https://efreyu.github.io/post/fix-shader-compile-worker.html">June 7th 2024, 10:04:11 pm</a>
-            <p>Update date：<a href="https://efreyu.github.io/post/fix-shader-compile-worker.html">June 8th 2024, 12:49:20 pm</a>
+            <p>Update date：<a href="https://efreyu.github.io/post/fix-shader-compile-worker.html">June 8th 2024, 12:50:57 pm</a>
             <p>License：This article is licensed under a <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a></p>
         </div>
     
@@ -686,7 +685,7 @@
                 <div class="toc-catalog">
                     <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
                 </div>
-                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Verify-Graphics-RHI-Configuration"><span class="toc-number">1.</span> <span class="toc-text">Verify Graphics RHI Configuration</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Clean-Up-Project-Specific-Intermediate-Files"><span class="toc-number">2.</span> <span class="toc-text">Clean Up Project-Specific Intermediate Files</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Global-DerivedDataCache-Cleanup"><span class="toc-number">3.</span> <span class="toc-text">Global DerivedDataCache Cleanup</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Automating-DerivedDataCache-Cleanup"><span class="toc-number">4.</span> <span class="toc-text">Automating DerivedDataCache Cleanup</span></a></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Step-by-Step-Solutions-to-Optimize-Shader-Compilation-Performance-in-Unreal-Engine"><span class="toc-number">1.</span> <span class="toc-text">Step-by-Step Solutions to Optimize Shader Compilation Performance in Unreal Engine</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Verify-Graphics-RHI-Configuration"><span class="toc-number">1.1.</span> <span class="toc-text">Verify Graphics RHI Configuration</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Clean-Up-Project-Specific-Intermediate-Files"><span class="toc-number">1.2.</span> <span class="toc-text">Clean Up Project-Specific Intermediate Files</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Global-DerivedDataCache-Cleanup"><span class="toc-number">1.3.</span> <span class="toc-text">Global DerivedDataCache Cleanup</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Automating-DerivedDataCache-Cleanup"><span class="toc-number">1.4.</span> <span class="toc-text">Automating DerivedDataCache Cleanup</span></a></li></ol></li></ol>
             </div>
         
         <!-- sidebar -->
