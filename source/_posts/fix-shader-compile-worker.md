@@ -107,3 +107,8 @@ if __name__ == "__main__":
 ```
 
 By following these steps, you can effectively manage and resolve the high CPU usage issue caused by ShaderCompileWorker in Unreal Engine, ensuring smoother and more efficient development.
+
+Useful links:
+- [Unreal Engine Forum post "ShaderCompileWorker failed: Mismatched shader version"](https://forums.unrealengine.com/t/shadercompileworker-failed-mismatched-shader-version/438865)
+- [Unreal Engine Forum post "Derived Data Cache Issue"](https://forums.unrealengine.com/t/derived-data-cache/324747)
+- [Unreal Engine Forum post "Fix ShaderCompileWorker"](https://forums.unrealengine.com/t/fix-shadercompileworker/150306)
