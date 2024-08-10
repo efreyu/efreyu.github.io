@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 date: 2024-05-28 14:11:00
 ---
 I am a seasoned developer with over 10 years of experience and a diploma in Software for Computer Engineering and Automated Systems. 
